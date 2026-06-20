@@ -1,6 +1,14 @@
 foursquare-ios-oauth
 ====================
 
+> **Legacy security notice:** This is a legacy sample retained for historical
+> reference. Do not use it for a new production integration. Its optional
+> code-to-token helper accepts a client secret in the app, predates PKCE and a
+> state parameter, uses legacy callback handling, and displays authorization
+> codes and tokens in the sample UI. Keep client secrets and token exchange on
+> a trusted server. The repository CI only performs static analysis and an
+> unsigned simulator build; it never contacts Foursquare.
+
 Foursquare native authentication makes it easier for your app's users to connect with Foursquare. Unlike web-based OAuth, native authentication re-uses the Foursquare app's user credentials, saving users the hassle of re-logging in to Foursquare within your app.
 
 This repo includes a helper class (`FSOAuth`) that can be used as-is in your own app. It also includes a simple test application as an example of how to use the class.
